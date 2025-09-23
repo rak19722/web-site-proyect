@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Geométrica arquitectura</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css?v=4">
+
+   <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVLNJP3C68"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JVLNJP3C68');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVLNJP3C68"></script>
+
+    <meta property="og:image" img src="imgs/nav-bar-logo.png">
+
+
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header id="nav-bar-hide">
+        <div class="logo-container">
+            <a href="index.html"><p class="logo-text"><i style="color: #2cb1da;" class=""></i>RC GEOMÉTRICA</p></a>
+            <div class="logo-center">
+            <a href="index.html"><img id="logo-nav-bar" src="imgs/nav-bar-logo.png" alt="RC-Geométrica-logo"></a>
+            </div>
+        </div>
+    
+        <nav>
+            <ul class="menu-toggle">
+                <li class="dropdown"><a href="index.html#inicio">Inicio</a></li>
+                
+                <li class="dropdown"><a href="libro.html">Manual de Construcción</a></li>
+                <li class="dropdown">
+                    <a href="casa.html">Bienes Raices</a>
+                    <ul class="dropdown-menu">
+                        
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#contact" onclick="scrollToSectionContacto()">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+           
+        </div>
+    </header>
+
+    <section id="inicio">
+        <div class="casa-inicio">
+            <div class="casa-inicio-slideshow">
+                <img src="Venta/5.jpg" alt="" class="slide">
+                <img src="Inicici/1.JPG" alt="" class="slide">
+                <img src="Inicici/2.JPG" alt="" class="slide">
+                <img src="Inicici/3.JPG" alt="" class="slide">
+                <img src="Inicici/4.JPG" alt="" class="slide">
+                <img src="Inicici/5.JPG" alt="" class="slide">
+                <img src="Inicici/6.JPG" alt="" class="slide">
+                <img src="Inicici/7.JPG" alt="" class="slide">
+                <img src="Inicici/8.JPG" alt="" class="slide">
+                <img src="Inicici/9.JPG" alt="" class="slide">
+                <img src="Inicici/10.JPG" alt="" class="slide">
+                <img src="Inicici/11.JPG" alt="" class="slide">
+                <img src="Inicici/12.JPG" alt="" class="slide">
+                <img src="Inicici/13.JPG" alt="" class="slide">
+                <img src="Inicici/14.JPG" alt="" class="slide">
+
+                
+                
+            </div>
+            <div class="controls">
+                <button id="prev">⟨</button>
+                <button id="next">⟩</button>
+            </div>
+            <div id="image-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modal-image">
+                <div id="caption"></div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="intro-section">
+        <div class="intro-container">
+            <h1>Nosotros<br></h1>
+            <p>
+                EN RC GEOMÉTRICA SA.CV FUSIONAMOS DISEÑO, CALIDAD, E INGENIO PARA CREAR Y TRANSFORMAR ESPACIOS EN EXPERIENCIAS ÚNICAS QUE EVOCAN EL ALMA A TRAVÉS DE LOS SENTIDOS EN BUSCA DE “ATEMPORALIDAD”. CON UNA TRAYECTORIA DE EXCELENCIA DE MÁS DE 2 DÉCADAS NOS ESPECIALIZAMOS
+                EN BRINDAR SOLUCIONES INOVADORAS PARA SATISFACER LAS NECESIDADES Y ASPIRACIONES DE NUESTROS CLIENTES.
+                </p>
+                
+                <p>
+                A TRAVÉS DE LA SUPERVISIÓN, MEJORA CONTINUA Y PASIÓN POR LOS DETALLES, HEMOS LOGRADO PERFECCIONAR NUESTROS PROCESOS DE CALIDAD. EL CÚMULO DE EXPERIENCIAS NOS LLEVÓ
+                A ESCRIBIR EL MANUAL PRÁCTICO DE CONSTRUCCIÓN, QUE SE HA VUELTO UN REFERENTE EN EL SECTOR.
+                </p>
+                
+                <p>
+                ALGUNAS DE NUESTRAS PUBLICACIONES:
+                </p>
+    
+            <!-- Contenedor de imágenes -->
+    <div class="intro-images">
+        <div class="image-pair">
+            <a href="https://geometrica-arquitectura.com/producto/casa-de-la-luna/">
+                <img src="Introduccion/3.png" alt="Imagen 1">
+            </a>
+            <a href="https://geometrica-arquitectura.com/producto/casa-de-la-luna/">
+                <img src="Introduccion/1.png" alt="Imagen 3">
+            </a>
+            <a href="https://geometrica-arquitectura.com/manual-de-construccion/">
+                <img src="libro/Man.png" alt="Imagen 5">
+            </a>
+        </div>
+        <div class="image-pair">
+            <img src="Introduccion/4.png" alt="Imagen 2">
+            <img src="Introduccion/2.png" alt="Imagen 4">
+            <a href="https://geometrica-arquitectura.com/manual-de-construccion/">
+                <img src="Introduccion/photo_2025-01-09_11-23-56.jpg" alt="Imagen 5">
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+<div class="btn-container">
+    <button class="btn-more" onclick="scrollToSectionCasa()">Bienes Raices</button>
+</div>
+    </section>
+    
+    <section id="proyectos">
+        <div class="cubes-container">
+            
+            <div class="cube-container">
+                <!-- reemplazar img/... y h3 es titulo del proyecto-->
+                <div class="cube" onclick="scrollToSectionResidencia()">
+                    <img src="Nosotros/1.JPG" alt="proyecto-1">
+                    <h3>Residencial</h3>
+                </div>
+                <div class="cube" onclick="scrollToSectionConjunto()">
+                    <img src="Nosotros/9.JPG" alt="proyecto-2">
+                    <h3>Vivienda Multifamiliar</h3>
+                </div>
+                <div class="cube" onclick="scrollToSectionComercial()">
+                    <img src="Nosotros/2.jpg" alt="proyecto-3">
+                    <h3>Comercial e Institucional</h3>
+                </div>
+                <div class="cube" onclick="scrollToSectionInter()">
+                    <img src="Nosotros/7.JPG" alt="proyecto-4">
+                    <h3>Interiorismo</h3>
+                </div>
+                <div class="cube" onclick="scrollToSectionProy()">
+                    <img src="Nosotros/Proyectos/1.- Torres San Martinito.jpg" alt="proyecto-5">
+                    <h3>Proyectos</h3>
+                </div>
+                <!-- Si quieres más elementos (cubos) en el contenedor, copiar y pegar la estructura de div class="cube" -->
+            </div>
+        </div>
+    </section>
+    
+
+
+        <!--Imagenes que dezliszan en forma de carrusel-->
+    <h2 class="titulo" id="residencia">Residencial</h2>
+<div class="slider-box">
+   
+    <ul>
+        <li>
+            <img src="Nosotros/Residencia/1.JPG" alt="Imagen 1"> 
+            
+        </li> 
+        <li>
+            <img src="Nosotros/Residencia/2.JPG" alt="Imagen 2"> 
+            
+        </li> 
+        <li>
+            <img src="Nosotros/Residencia/3.JPG" alt="Imagen 3"> 
+           
+        </li> 
+        <li>
+            <img src="Nosotros/Residencia/4.JPG" alt="Imagen 4"> 
+           
+        </li>
+        <li>
+            <img src="Nosotros/Residencia/5.JPG" alt="Imagen 5"> 
+            
+        </li>
+        <li>
+            <img src="Nosotros/Residencia/6.JPG" alt="Imagen 6"> 
+            
+        </li>
+        <li>
+            <img src="Nosotros/Residencia/7.JPG" alt="Imagen 7"> 
+            
+        </li>
+        <li>
+            <img src="Nosotros/Residencia/8.JPG" alt="Imagen 8"> 
+            
+        </li>
+        <li>
+            <img src="Nosotros/Residencia/9.JPG" alt="Imagen 9"> 
+            
+        </li>
+        <li>
+            <img src="Nosotros/Residencia/10.JPG" alt="Imagen 9"> 
+            
+        </li>
+        <li>
+            <img src="Nosotros/Residencia/11.JPG" alt="Imagen 9"> 
+            
+        </li>
+        <li>
+            <img src="Nosotros/Residencia/12.JPG" alt="Imagen 9"> 
+            
+        </li>
+        <li>
+            <img src="Nosotros/Residencia/13.JPG" alt="Imagen 9"> 
+            
+        </li>
+        <li>
+            <img src="Nosotros/Residencia/14.JPG" alt="Imagen 9"> 
+            
+        </li>
+        <li>
+            <img src="Nosotros/Residencia/15.JPG" alt="Imagen 9"> 
+            
+        </li>      
+    </ul>
+
+    <div class="controls">
+        <button id="prev">⟨</button>
+        <button id="next">⟩</button>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+   
+</div>
+
+
+
+
+<!--Segundo carrusel-->
+<h2 class="titulo" id="conjunto">Vivienda Multifamiliar</h2>
+<div class="slider-box">
+    <ul>
+        <li>
+            <img src="Nosotros/Conjunto/1.JPG" alt="Imagen 1">
+            
+        </li> 
+        <li>
+            <img src="Nosotros/Conjunto/2.JPG" alt="Imagen 2">
+            
+        </li> 
+        <li>
+            <img src="Nosotros/Conjunto/3.JPG" alt="Imagen 3">
+           
+        </li> 
+        <li>
+            <img src="Nosotros/Conjunto/4.JPG" alt="Imagen 4">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Conjunto/5.JPG" alt="Imagen 5">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Conjunto/6.JPG" alt="Imagen 6">
+           
+        </li>
+        <li>
+            <img src="Nosotros/Conjunto/7.JPG" alt="Imagen 7">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Conjunto/8.JPG" alt="Imagen 8">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Conjunto/9.JPG" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Conjunto/10.JPG" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Conjunto/11.JPG" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Conjunto/12.JPG" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Conjunto/13.JPG" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Conjunto/14.JPG" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Conjunto/15.JPG" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Conjunto/16.JPG" alt="Imagen 9">
+            
+        </li>
+              
+    </ul>
+
+    <div class="controls">
+        <button id="prev">⟨</button>
+        <button id="next">⟩</button>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    
+</div>
+
+<!--tercer carrusel-->
+<h2 class="titulo" id="comercial">Comercial e Industrial</h2>
+<div class="slider-box">
+   
+    <ul>
+        <li>
+            <img src="Nosotros/Comercial/1.JPG" alt="Imagen 1">
+        
+        </li> 
+        <li>
+            <img src="Nosotros/Comercial/2.JPG" alt="Imagen 2">
+           
+        </li> 
+        <li>
+            <img src="Nosotros/Comercial/3.JPG" alt="Imagen 3">
+           
+        </li> 
+        <li>
+            <img src="Nosotros/Comercial/4.JPG" alt="Imagen 4">
+           
+        </li>
+        <li>
+            <img src="Nosotros/Comercial/5.JPG" alt="Imagen 5">
+           
+        </li>
+        <li>
+            <img src="Nosotros/Comercial/6.JPG" alt="Imagen 6">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Comercial/7.JPG" alt="Imagen 7">
+           
+        </li>
+        <li>
+            <img src="Nosotros/Comercial/8.JPG" alt="Imagen 8">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Comercial/9.JPG" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Comercial/10.JPG" alt="Imagen 10">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Comercial/11.JPG" alt="Imagen 11">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Comercial/12.JPG" alt="Imagen 12">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Comercial/13.JPG" alt="Imagen 13">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Comercial/14.JPG" alt="Imagen 14">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Comercial/15.JPG" alt="Imagen 15">
+            
+        </li>                        
+    </ul>
+
+    <div class="controls">
+        <button id="prev">⟨</button>
+        <button id="next">⟩</button>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    
+</div>
+<!--cuarto carrusel-->
+<h2 class="titulo" id="inter">Interiorismo</h2>
+<div class="slider-box">
+ 
+    <ul>
+        <li>
+            <img src="Nosotros/Interiorismo/1.JPG" alt="Imagen 1">
+            
+        </li> 
+        <li>
+            <img src="Nosotros/Interiorismo/2.JPG" alt="Imagen 2">
+            
+        </li> 
+        <li>
+            <img src="Nosotros/Interiorismo/3.JPG" alt="Imagen 3">
+            
+        </li> 
+        <li>
+            <img src="Nosotros/Interiorismo/4.JPG" alt="Imagen 4">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Interiorismo/5.JPG" alt="Imagen 5">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Interiorismo/6.JPG" alt="Imagen 6">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Interiorismo/7.JPG" alt="Imagen 7">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Interiorismo/8.JPG" alt="Imagen 8">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Interiorismo/9.JPG" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Interiorismo/10.JPG" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Interiorismo/11.JPG" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Interiorismo/12.JPG" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Interiorismo/13.JPG" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Interiorismo/14.JPG" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Interiorismo/15.JPG" alt="Imagen 9">
+            
+        </li>            
+    </ul>
+
+
+    
+
+    <div class="controls">
+        <button id="prev">⟨</button>
+        <button id="next">⟩</button>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    
+</div>
+
+
+
+<!--quinto carrusel-->
+<h2 class="titulo" id="proy">Proyectos</h2>
+<div class="slider-box">
+ 
+    <ul>
+        <li>
+            <img src="Nosotros/Proyectos/1.- Torres San Martinito.jpg" alt="Imagen 1">
+            
+        </li> 
+        <li>
+            <img src="Nosotros/Proyectos/2.- FACHADA FRONTAL SUR-ORIENTE 1.jpg" alt="Imagen 2">
+            
+        </li> 
+        <li>
+            <img src="Nosotros/Proyectos/3.- edificio Juarez 2503 noche.jpg" alt="Imagen 3">
+            
+        </li> 
+        <li>
+            <img src="Nosotros/Proyectos/4.- sindicato audi (3).jpg" alt="Imagen 4">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/5.-Dptos La Noria.jpg" alt="Imagen 5">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/6.- HABANA 1.jpg" alt="Imagen 6">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/7.- NAYARIT LOMAS.jpg" alt="Imagen 7">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/8.- Fuentes de Angelopolis (2).jpg" alt="Imagen 8">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/9.- Muebleria-Nocturna 30ago07.jpg" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/10.- la norio hotel.jpg" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/11.- Parque Funerario  a 1 Acceso.jpg" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/12.- interior loft 1 (6).jpg" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/13 post meta 1.jfif" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/14.- cruz del sur.jpg" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/15 SAN ANGEL 1.png" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/16.- edificio belisario Torre 21 Pte fachada.jpg" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/17.- PARQUEHABANA_3 - Photo.jpg" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/18.- FACHADA FRONTAL SUR-PONIENTE 2.jpg" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/19.-Plaza Comercial 1.jpg" alt="Imagen 9">
+            
+        </li>
+        <li>
+            <img src="Nosotros/Proyectos/20.- vista hermosa.jpg" alt="Imagen 9">
+            
+        </li>               
+    </ul>
+
+
+    
+
+    <div class="controls">
+        <button id="prev">⟨</button>
+        <button id="next">⟩</button>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    
+</div>
+
+
+
+    
+
+    <div class="contact" id="contact">
+        <hr>
+        <h1>Contáctanos</h1>
+        <section class="contact-container">
+            <div class="contact-column">
+                <a href="tel:123456789"><i class="fas fa-phone"></i><span>+52 1 222 501 8925</span></a>
+                <a href="mailto:rcgeometrica@gmail.com"><i class="fas fa-envelope"></i><span>rcgeometrica@gmail.com</span></a>
+                <a href="https://maps.app.goo.gl/NAm5S3pZipBrHZgy8"><i class="fas fa-map-marker-alt"></i><span>51 Pte. 4711-A 201, Fracc Estrella del Sur, 72190 Heroica Puebla de Zaragoza, Pue.</span></a>
+            </div>
+            <div class="contact-column">
+                <a href="https://www.facebook.com/Geometricarquitecturaa"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+                <a href="https://api.whatsapp.com/send?phone=2225018925">
+                    <i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+                <a href="https://www.instagram.com/geometrica.arquitectura/"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 RC Geométrica S.A. de C.V. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu-toggle');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+    <script src="script.js?v=1.0"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rc Geométrica</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css?v=4">
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVLNJP3C68"></script>
+   <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'G-JVLNJP3C68');
+   </script>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVLNJP3C68"></script>
+   <meta property="og:image" img src="imgs/nav-bar-logo.png">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header id="nav-bar-hide">
+        <div class="logo-container">
+            <a href="index.html"><p class="logo-text">RC GEOMÉTRICA</p></a>
+            <div class="logo-center">
+                <a href="index.html"><img id="logo-nav-bar" src="imgs/nav-bar-logo.png" alt="RC Geométrica logo"></a>
+            </div>
+        </div>
+    
+        <nav>
+            <ul class="menu-toggle">
+                <li class="dropdown"><a href="index.html#inicio">Inicio</a></li>
+                
+                <li class="dropdown"><a href="libro.html">Manual de Construcción</a></li>
+                <li class="dropdown">
+                    <a href="casa.html">Bienes Raices</a>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#contact" onclick="scrollToSectionContacto()">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()"></div>
+    </header>
+
+    <!-- Sección de casas (vista principal) -->
+    <section class="casa-cuadros">
+        <div class="casa-cuadro" onclick="mostrarCasa('moratilla')">
+            <img src="Moratilla/0.JPG" alt="Moratilla" class="casa-cuadro-img">
+            <h3>Fuentes Moratilla</h3>
+            <p>Casa con 3 Recámaras en PB, cerca de la autopista México-Puebla, VW y del 
+                Club de Golf Las Fuentes, con amplio Jardín, sala con doble altura, cochera para 
+                3 vehículos y vigilancia 24/7.
+
+                </p>
+                <p>
+                    Ideal para personas con discapacidad motriz por diseño Ergonómico
+                </p>
+            <p><strong>Precio: 5,985,000 MXN</strong></p>
+        </div>
+        <div class="casa-cuadro" onclick="mostrarCasa('luna')">
+            <img src="imgs/home-bg-1.jpg" alt="Casa de la Luna" class="casa-cuadro-img">
+            <h3>Casa de la Luna</h3>
+            <p>Casa moderna con 3 recámaras y terraza</p>
+            <p><strong>Precio: 14,500,000 MXN</strong></p>
+        </div>
+    </section>
+
+    <!-- Información detallada de Moratilla -->
+<div id="casa-moratilla" class="casa-detalles" style="display: none;">
+    <!-- Comienza sección de detalles -->
+    <section id="carousel-moratilla" class="container">
+        <div class="img_container">
+            <img src="Moratilla/0.JPG" alt="Imagen principal de Moratilla" class="main-img">
+        </div>
+        <div class="carousel_controls">
+            <button class="carousel_btn prev" onclick="changeImage('carousel-moratilla', -1)">&#10094;</button>
+            <button class="carousel_btn next" onclick="changeImage('carousel-moratilla', 1)">&#10095;</button>
+        </div>
+    </section>
+    
+
+   
+
+    <div class="casa-info-section">
+        <h2>Fuentes Moratilla</h2>
+        <p>
+            A UN COSTADO DE LA AUTOPISTA MÉXICO-PUEBLA y CERCA DEL CLUB DE GOLF LAS FUENTES 
+
+            Terreno: 400 m2  
+            Construcción: 272 m2  
+
+            el Fraccionamiento cuenta con calles amplias, diversas áreas verdes y vigilancia 24 hrs.
+
+            - Cochera para 3 autos  
+            - Sala con doble altura y comedor  
+            - Cocina integral y equipada  
+            - Desayunador/antecomedor  
+            - 3 habitaciones amplias con baño cada una, principal con vestidor en Planta Baja  
+            - Sala de TV  
+            - Jardín amplio de 170 m2  
+            - Acceso de servicio independiente  
+            - Cuarto de servicio.
+        </p>
+
+        <!-- Espacio para imágenes -->
+   <div class="casa-imagenes">
+    <div class="imagen-item">
+        <img src="Moratilla/Captura de pantalla 2025-01-12 212732.png" alt="Imagen 1 de la casa">
+    </div>
+    <div class="imagen-item">
+        <img src="Moratilla/Captura de pantalla 2025-01-12 212756.png" alt="Imagen 2 de la casa">
+    </div>
+</div>
+        <div class="casa-precio-container">
+            <p class="casa-precio-label" style="font-size: 2rem; font-weight: 400;">Precio: 5,985,000 MXN</p>
+        </div>
+
+
+         <!-- Video justo antes del precio y las características -->
+    <div class="casa-video-section">
+        <video controls class="video-vertical">
+            <source src="casa/Moratillamp4.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+    </div>
+    </div>
+</div>
+
+
+    <!-- Información detallada de Casa de la Luna -->
+    <div id="casa-luna" class="casa-detalles" style="display: none;">
+        <!-- Comienza sección, imagen y mapa de casa -->
+        <section class="casa-contenedor-img-ubi">
+            <div class="casa-img-column casa-main-img">
+                <img src="imgs/home-bg-1.jpg" alt="Imagen principal de la Casa de la Luna">
+            </div>
+            <div class="casa-img-column casa-secondary-imgs">
+                <img src="Introduccion/BNAMX.png" alt="Imagen adicional de la Casa">
+                <img src="Introduccion/1.JPG" alt="Otra Imagen adicional de la Casa">
+            </div>
+        </section>
+        <section id="carousel-luna" class="container">
+            <div class="img_container">
+                <img src="Venta/1.jpg" alt="Imagen principal de la Casa de la Luna" class="main-img">
+            </div>
+            <div class="carousel_controls">
+                <button class="carousel_btn prev" onclick="changeImage('carousel-luna', -1)">&#10094;</button>
+                <button class="carousel_btn next" onclick="changeImage('carousel-luna', 1)">&#10095;</button>
+            </div>
+        </section>
+        <div class="casa-info-section">
+            <h2>Casa de la Luna</h2>
+            <p>
+                Completamente remodelada con diseño único, calidad en acabados, ubicación estratégica que conecta a diversos puntos de la ciudad. Terreno de 710 m² y construcción de 600 m². En planta baja: amplia sala y comedor, bar, cocina equipada, biblioteca, sala de juegos, sala de TV con chimenea, baño de visitas, jardín amplio estilo japonés con cancha de fútbol (200 m²), área social conectada a jardín y terrazas, cuarto de servicio y cuarto de lavado. En planta alta: 4 habitaciones con baño completo cada una, principal con vestidor y terraza amplia con pérgolado (opción a 5ta recámara), gimnasio. En 3er nivel: roof garden con jacuzzi y área social con vista panorámica.
+            </p>
+
+            <!-- Espacio para imágenes -->
+   <div class="casa-imagenes">
+    <div class="imagen-item">
+        <img src="casa/1.png" alt="Imagen 1 de la casa">
+    </div>
+    <div class="imagen-item">
+        <img src="casa/2.png" alt="Imagen 2 de la casa">
+    </div>
+</div>
+            <div class="casa-precio-container">
+                <p class="casa-precio-label" style="font-size: 2rem; font-weight: 400;">Precio: 14,500,000 MXN</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de contacto -->
+    <section class="casa-contacto">
+        <p>Agenda tu Visita</p>
+        <a href="index.html#contact" onclick="scrollToSectionContacto()"><button>Contáctanos</button></a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 RC Geométrica S.A de C.V. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js?v=1.0">
+        
+        function toggleMenu() {
+            var menu = document.querySelector('.menu-toggle');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+
+    
+
+        
+</body>
+</html>

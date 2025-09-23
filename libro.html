@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Geométrica arquitectura</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css?v=4">
+
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVLNJP3C68"></script>
+   <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'G-JVLNJP3C68');
+   </script>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVLNJP3C68"></script>
+   <meta property="og:image" img src="imgs/nav-bar-logo.png">
+</head>
+<body>
+
+    <header id="nav-bar-hide">
+        <div class="logo-container">
+            <a href="index.html"><p class="logo-text"><i style="color: #2cb1da;" class=""></i>RC GEOMÉTRICA</p></a>
+            <div class="logo-center">
+                <a href="index.html"><img id="logo-nav-bar" src="imgs/nav-bar-logo.png" alt="RC-Geométrica-logo"></a>
+            </div>
+        </div>
+    
+        <nav>
+            <ul class="menu-toggle">
+                <li class="dropdown"><a href="index.html#inicio">Inicio</a></li>
+                
+                <li class="dropdown"><a href="libro.html">Manual de Construcción</a></li>
+                <li class="dropdown">
+                    <a href="casa.html">Bienes Raíces</a>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#contact" onclick="scrollToSectionContacto()">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()"></div>
+    </header>
+
+    <div class="book-section">
+        <div class="book-details">
+            <h2>Manual Práctico de Calidad en Construcción</h2>
+            <p class="book-author">Rafael Corro López</p>
+            <p class="book-description">
+                Este manual ofrece una guía esencial para quienes deseen adquirir conocimientos básicos y avanzados en el área de la construcción.
+            </p>
+            <a href="#"><button>Preventa</button></a>
+        </div>
+        <div class="book-cover">
+            <img src="libro/Man.png" alt="portada-libro">
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <p>&copy; 2024 RC Geométrica S.A de C.V. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js?v=1.0"></script>
+</body>
+</html>

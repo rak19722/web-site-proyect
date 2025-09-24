@@ -1,0 +1,52 @@
+/* Footer Contacto */
+footer {
+    margin-top: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+.contact {
+    padding: 2rem;
+}
+
+.contact h1{/*titulo de barra de contacto*/
+    font-size: 40px;
+    margin: 2rem;
+    margin-left: 0;
+}
+
+.contact .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.contact .contact-container .contact-column {
+    flex: 1 1 48%;
+    text-align: left; /* Alineacion de texto en columnas left o center */
+}
+
+.contact .contact-container .contact-column a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--black); /*Color de texto para elementos de contacto*/
+    text-decoration: none;
+}
+
+.contact .contact-container .contact-column a:hover { /* funcion hover es para aplicar efectos cuano el mouse esta encima*/
+    letter-spacing: 0.5px;
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+.contact .contact-container .contact-column a i {
+    color: var(--main-color);
+    margin-right: 0.5rem;
+}

@@ -1,3 +1,21 @@
+
+//Header y footer para todos los htmls
+
+// Inyectar header y footer en todas las páginas
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("/header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+  fetch("/footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+});
+
+
+
+
+
 // Esconder y mostrar la barra de navegación al hacer scroll
 let prevScrollPos = window.pageYOffset;
 

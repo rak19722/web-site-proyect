@@ -1,32 +1,39 @@
-
-
 <header id="nav-bar-hide">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-   <link rel="stylesheet" href="/styles/style_header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="/styles/style_header.css">
+
+  <!-- Checkbox oculto que controla el menú -->
+  <input type="checkbox" id="menu" class="menu-checkbox" />
+
+  <!-- Barra superior: logo + botón -->
+  <div class="topbar">
     <div class="logo-container">
-        <a href="index.html"><p class="logo-text"><i style="color: #2cb1da;" class=""></i>RC GEOMÉTRICA</p></a>
-        <div class="logo-center">
+      <a href="index.html">
+        <p class="logo-text"><i style="color: #2cb1da;"></i>RC GEOMÉTRICA</p>
+      </a>
+      <div class="logo-center">
         <a href="index.html"><img id="logo-nav-bar" src="imgs/nav-bar-logo.png" alt="RC-Geométrica-logo"></a>
-        </div>
+      </div>
     </div>
 
-    <nav>
-        <ul class="menu-toggle">
-            <li class="dropdown"><a href="index.html#inicio">Inicio</a></li>
-            
-            <li class="dropdown"><a href="libro.html">Manual de Construcción</a></li>
-            <li class="dropdown">
-                <a href="casa.html">Bienes Raices</a>
-                <ul class="dropdown-menu">
-                    
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="index.html#contact" onclick="scrollToSectionContacto()">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="hamburger" onclick="toggleMenu()">
-        
-    </div>
+    <!-- Botón hamburger (sin JS) -->
+    <label class="burger" for="menu" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </label>
+  </div>
+
+  <!-- Menú -->
+  <nav id="primary-menu">
+    <ul class="items">
+      <li class="dropdown"><a class="item" href="index.html#inicio">Inicio</a></li>
+      <li class="dropdown"><a class="item" href="libro.html">Manual de Construcción</a></li>
+      <li class="dropdown">
+        <a class="item" href="casa.html">Bienes Raices</a>
+        <ul class="dropdown-menu"></ul>
+      </li>
+      <li class="dropdown">
+        <a class="item" href="index.html#contact" onclick="scrollToSectionContacto()">Contacto</a>
+      </li>
+    </ul>
+  </nav>
 </header>

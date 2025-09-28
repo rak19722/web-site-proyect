@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Geométrica arquitectura</title>
+   <title>Rc Geométrica</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
    <link rel="stylesheet" href="styles/style_index.css">
 
@@ -19,7 +19,7 @@
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVLNJP3C68"></script>
 
-    <meta property="og:image" img src="imgs/nav-bar-logo.png">
+    <meta property="Rc Geometrica" img src="imgs/nav-bar-logo.png">
 
 
 </head>
@@ -33,20 +33,20 @@
         <div class="casa-inicio">
             <div class="casa-inicio-slideshow">
                 <img src="Venta/5.jpg" alt="" class="slide">
-                <img src="Inicici/1.JPG" alt="" class="slide">
-                <img src="Inicici/2.JPG" alt="" class="slide">
-                <img src="Inicici/3.JPG" alt="" class="slide">
-                <img src="Inicici/4.JPG" alt="" class="slide">
-                <img src="Inicici/5.JPG" alt="" class="slide">
-                <img src="Inicici/6.JPG" alt="" class="slide">
-                <img src="Inicici/7.JPG" alt="" class="slide">
-                <img src="Inicici/8.JPG" alt="" class="slide">
-                <img src="Inicici/9.JPG" alt="" class="slide">
-                <img src="Inicici/10.JPG" alt="" class="slide">
-                <img src="Inicici/11.JPG" alt="" class="slide">
-                <img src="Inicici/12.JPG" alt="" class="slide">
-                <img src="Inicici/13.JPG" alt="" class="slide">
-                <img src="Inicici/14.JPG" alt="" class="slide">
+                <img src="Inicici/1.JPG" alt="Rafael Corro López" class="slide">
+                <img src="Inicici/2.JPG" alt="Rafael Corro López" class="slide">
+                <img src="Inicici/3.JPG" alt="Rafael Corro López" class="slide">
+                <img src="Inicici/4.JPG" alt="Rafael Corro López" class="slide">
+                <img src="Inicici/5.JPG" alt="Rafael Corro López" class="slide">
+                <img src="Inicici/6.JPG" alt="Rafael Corro López" class="slide">
+                <img src="Inicici/7.JPG" alt="Rafael Corro López" class="slide">
+                <img src="Inicici/8.JPG" alt="Rafael Corro López" class="slide">
+                <img src="Inicici/9.JPG" alt="Rafael Corro López" class="slide">
+                <img src="Inicici/10.JPG" alt="Rafael Corro López" class="slide">
+                <img src="Inicici/11.JPG" alt="Rafael Corro López" class="slide">
+                <img src="Inicici/12.JPG" alt="Rafael Corro López" class="slide">
+                <img src="Inicici/13.JPG" alt="Rafael Corro López" class="slide">
+                <img src="Inicici/14.JPG" alt="Rafael Corro López" class="slide">
 
                 
                 
@@ -117,22 +117,50 @@
             
             <div class="cube-container">
                 <!-- reemplazar img/... y h3 es titulo del proyecto-->
-                <div class="cube" onclick="scrollToSectionResidencia()">
-                    <img src="Nosotros/1.JPG" alt="proyecto-1">
-                    <h3>Residencial</h3>
-                </div>
-                <div class="cube" onclick="scrollToSectionConjunto()">
-                    <img src="Nosotros/9.JPG" alt="proyecto-2">
-                    <h3>Vivienda Multifamiliar</h3>
-                </div>
-                <div class="cube" onclick="scrollToSectionComercial()">
-                    <img src="Nosotros/2.jpg" alt="proyecto-3">
-                    <h3>Comercial e Institucional</h3>
-                </div>
-                <div class="cube" onclick="scrollToSectionInter()">
-                    <img src="Nosotros/7.JPG" alt="proyecto-4">
-                    <h3>Interiorismo</h3>
-                </div>
+            <div class="cube" onclick="scrollToSectionResidencia()">
+            <img 
+                src="Nosotros/1.JPG" 
+                alt="Obra residencial diseñada por el arquitecto Rafael Corro López"
+                data-tipo="Residencial"
+                data-arquitecto="Rafael Corro López"
+            >
+            <h3>Residencial</h3>
+            </div>
+
+        <div class="cube" onclick="scrollToSectionConjunto()">
+        <img 
+            src="Nosotros/9.JPG" 
+            alt="Obra de vivienda multifamiliar diseñada por el arquitecto Rafael Corro López"
+            data-tipo="Vivienda Multifamiliar"
+            data-arquitecto="Rafael Corro López"
+            data-ubicacion="Puebla, México"
+        >
+        <h3>Vivienda Multifamiliar</h3>
+        </div>
+
+        <div class="cube" onclick="scrollToSectionComercial()">
+        <img 
+            src="Nosotros/2.jpg" 
+            alt="Obra de tipo comercial e industrial diseñada por el arquitecto Rafael Corro López"
+            data-tipo="Comercial e Industrial"
+            data-arquitecto="Rafael Corro López"
+            data-ubicacion="Puebla, México"
+   
+        >
+        <h3>Comercial e Institucional</h3>
+        </div>
+
+            <div class="cube" onclick="scrollToSectionInter()">
+            <img 
+                src="Nosotros/7.JPG" 
+                alt="Proyecto de interiorismo diseñado por el arquitecto Rafael Corro López"
+                data-tipo="Interiorismo"
+                data-arquitecto="Rafael Corro López"
+                data-ubicacion="Puebla, México"
+            >
+            <h3>Interiorismo</h3>
+            </div>
+
                 <div class="cube" onclick="scrollToSectionProy()">
                     <img src="Nosotros/Proyectos/1.- Torres San Martinito.jpg" alt="proyecto-5">
                     <h3>Proyectos</h3>
@@ -144,85 +172,68 @@
     
 
 
-        <!--Imagenes que dezliszan en forma de carrusel-->
-    <h2 class="titulo" id="residencia">Residencial</h2>
+<!-- Carrusel de Residencial -->
+<h2 class="titulo" id="residencia">Residencial</h2>
 <div class="slider-box">
-   
-    <ul>
-        <li>
-            <img src="Nosotros/Residencia/1.JPG" alt="Imagen 1"> 
-            
-        </li> 
-        <li>
-            <img src="Nosotros/Residencia/2.JPG" alt="Imagen 2"> 
-            
-        </li> 
-        <li>
-            <img src="Nosotros/Residencia/3.JPG" alt="Imagen 3"> 
-           
-        </li> 
-        <li>
-            <img src="Nosotros/Residencia/4.JPG" alt="Imagen 4"> 
-           
-        </li>
-        <li>
-            <img src="Nosotros/Residencia/5.JPG" alt="Imagen 5"> 
-            
-        </li>
-        <li>
-            <img src="Nosotros/Residencia/6.JPG" alt="Imagen 6"> 
-            
-        </li>
-        <li>
-            <img src="Nosotros/Residencia/7.JPG" alt="Imagen 7"> 
-            
-        </li>
-        <li>
-            <img src="Nosotros/Residencia/8.JPG" alt="Imagen 8"> 
-            
-        </li>
-        <li>
-            <img src="Nosotros/Residencia/9.JPG" alt="Imagen 9"> 
-            
-        </li>
-        <li>
-            <img src="Nosotros/Residencia/10.JPG" alt="Imagen 9"> 
-            
-        </li>
-        <li>
-            <img src="Nosotros/Residencia/11.JPG" alt="Imagen 9"> 
-            
-        </li>
-        <li>
-            <img src="Nosotros/Residencia/12.JPG" alt="Imagen 9"> 
-            
-        </li>
-        <li>
-            <img src="Nosotros/Residencia/13.JPG" alt="Imagen 9"> 
-            
-        </li>
-        <li>
-            <img src="Nosotros/Residencia/14.JPG" alt="Imagen 9"> 
-            
-        </li>
-        <li>
-            <img src="Nosotros/Residencia/15.JPG" alt="Imagen 9"> 
-            
-        </li>      
-    </ul>
+  <ul>
+    <li>
+      <img src="Nosotros/Residencia/1.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Residencia/2.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Residencia/3.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Residencia/4.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Residencia/5.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Residencia/6.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Residencia/7.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Residencia/8.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Residencia/9.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Residencia/10.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Residencia/11.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Residencia/12.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Residencia/13.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Residencia/14.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Residencia/15.JPG" alt="Rafael Corro López">
+    </li>
+  </ul>
 
-    <div class="controls">
-        <button id="prev">⟨</button>
-        <button id="next">⟩</button>
-    </div>
+  <div class="controls">
+    <button id="prev">⟨</button>
+    <button id="next">⟩</button>
+  </div>
 
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
-
-   
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
 </div>
+
 
 
 
@@ -230,245 +241,195 @@
 <!--Segundo carrusel-->
 <h2 class="titulo" id="conjunto">Vivienda Multifamiliar</h2>
 <div class="slider-box">
-    <ul>
-        <li>
-            <img src="Nosotros/Conjunto/1.JPG" alt="Imagen 1">
-            
-        </li> 
-        <li>
-            <img src="Nosotros/Conjunto/2.JPG" alt="Imagen 2">
-            
-        </li> 
-        <li>
-            <img src="Nosotros/Conjunto/3.JPG" alt="Imagen 3">
-           
-        </li> 
-        <li>
-            <img src="Nosotros/Conjunto/4.JPG" alt="Imagen 4">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Conjunto/5.JPG" alt="Imagen 5">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Conjunto/6.JPG" alt="Imagen 6">
-           
-        </li>
-        <li>
-            <img src="Nosotros/Conjunto/7.JPG" alt="Imagen 7">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Conjunto/8.JPG" alt="Imagen 8">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Conjunto/9.JPG" alt="Imagen 9">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Conjunto/10.JPG" alt="Imagen 9">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Conjunto/11.JPG" alt="Imagen 9">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Conjunto/12.JPG" alt="Imagen 9">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Conjunto/13.JPG" alt="Imagen 9">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Conjunto/14.JPG" alt="Imagen 9">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Conjunto/15.JPG" alt="Imagen 9">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Conjunto/16.JPG" alt="Imagen 9">
-            
-        </li>
-              
-    </ul>
+  <ul>
+    <li>
+      <img src="Nosotros/Conjunto/1.JPG" alt="Rafael Corro López">
+    </li> 
+    <li>
+      <img src="Nosotros/Conjunto/2.JPG" alt="Rafael Corro López">
+    </li> 
+    <li>
+      <img src="Nosotros/Conjunto/3.JPG" alt="Rafael Corro López">
+    </li> 
+    <li>
+      <img src="Nosotros/Conjunto/4.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Conjunto/5.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Conjunto/6.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Conjunto/7.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Conjunto/8.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Conjunto/9.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Conjunto/10.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Conjunto/11.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Conjunto/12.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Conjunto/13.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Conjunto/14.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Conjunto/15.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Conjunto/16.JPG" alt="Rafael Corro López">
+    </li>     
+  </ul>
 
-    <div class="controls">
-        <button id="prev">⟨</button>
-        <button id="next">⟩</button>
-    </div>
+  <div class="controls">
+    <button id="prev">⟨</button>
+    <button id="next">⟩</button>
+  </div>
 
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
-    
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
 </div>
+
 
 <!--tercer carrusel-->
 <h2 class="titulo" id="comercial">Comercial e Industrial</h2>
 <div class="slider-box">
-   
-    <ul>
-        <li>
-            <img src="Nosotros/Comercial/1.JPG" alt="Imagen 1">
-        
-        </li> 
-        <li>
-            <img src="Nosotros/Comercial/2.JPG" alt="Imagen 2">
-           
-        </li> 
-        <li>
-            <img src="Nosotros/Comercial/3.JPG" alt="Imagen 3">
-           
-        </li> 
-        <li>
-            <img src="Nosotros/Comercial/4.JPG" alt="Imagen 4">
-           
-        </li>
-        <li>
-            <img src="Nosotros/Comercial/5.JPG" alt="Imagen 5">
-           
-        </li>
-        <li>
-            <img src="Nosotros/Comercial/6.JPG" alt="Imagen 6">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Comercial/7.JPG" alt="Imagen 7">
-           
-        </li>
-        <li>
-            <img src="Nosotros/Comercial/8.JPG" alt="Imagen 8">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Comercial/9.JPG" alt="Imagen 9">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Comercial/10.JPG" alt="Imagen 10">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Comercial/11.JPG" alt="Imagen 11">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Comercial/12.JPG" alt="Imagen 12">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Comercial/13.JPG" alt="Imagen 13">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Comercial/14.JPG" alt="Imagen 14">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Comercial/15.JPG" alt="Imagen 15">
-            
-        </li>                        
-    </ul>
+  <ul>
+    <li>
+      <img src="Nosotros/Comercial/1.JPG" alt="Rafael Corro López">
+    </li> 
+    <li>
+      <img src="Nosotros/Comercial/2.JPG" alt="Rafael Corro López">
+    </li> 
+    <li>
+      <img src="Nosotros/Comercial/3.JPG" alt="Rafael Corro López">
+    </li> 
+    <li>
+      <img src="Nosotros/Comercial/4.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Comercial/5.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Comercial/6.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Comercial/7.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Comercial/8.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Comercial/9.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Comercial/10.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Comercial/11.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Comercial/12.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Comercial/13.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Comercial/14.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Comercial/15.JPG" alt="Rafael Corro López">
+    </li>                        
+  </ul>
 
-    <div class="controls">
-        <button id="prev">⟨</button>
-        <button id="next">⟩</button>
-    </div>
+  <div class="controls">
+    <button id="prev">⟨</button>
+    <button id="next">⟩</button>
+  </div>
 
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+</div>
+
     
 </div>
 <!--cuarto carrusel-->
 <h2 class="titulo" id="inter">Interiorismo</h2>
 <div class="slider-box">
- 
-    <ul>
-        <li>
-            <img src="Nosotros/Interiorismo/1.JPG" alt="Imagen 1">
-            
-        </li> 
-        <li>
-            <img src="Nosotros/Interiorismo/2.JPG" alt="Imagen 2">
-            
-        </li> 
-        <li>
-            <img src="Nosotros/Interiorismo/3.JPG" alt="Imagen 3">
-            
-        </li> 
-        <li>
-            <img src="Nosotros/Interiorismo/4.JPG" alt="Imagen 4">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Interiorismo/5.JPG" alt="Imagen 5">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Interiorismo/6.JPG" alt="Imagen 6">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Interiorismo/7.JPG" alt="Imagen 7">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Interiorismo/8.JPG" alt="Imagen 8">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Interiorismo/9.JPG" alt="Imagen 9">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Interiorismo/10.JPG" alt="Imagen 9">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Interiorismo/11.JPG" alt="Imagen 9">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Interiorismo/12.JPG" alt="Imagen 9">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Interiorismo/13.JPG" alt="Imagen 9">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Interiorismo/14.JPG" alt="Imagen 9">
-            
-        </li>
-        <li>
-            <img src="Nosotros/Interiorismo/15.JPG" alt="Imagen 9">
-            
-        </li>            
-    </ul>
+  <ul>
+    <li>
+      <img src="Nosotros/Interiorismo/1.JPG" alt="Rafael Corro López">
+    </li> 
+    <li>
+      <img src="Nosotros/Interiorismo/2.JPG" alt="Rafael Corro López">
+    </li> 
+    <li>
+      <img src="Nosotros/Interiorismo/3.JPG" alt="Rafael Corro López">
+    </li> 
+    <li>
+      <img src="Nosotros/Interiorismo/4.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Interiorismo/5.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Interiorismo/6.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Interiorismo/7.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Interiorismo/8.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Interiorismo/9.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Interiorismo/10.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Interiorismo/11.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Interiorismo/12.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Interiorismo/13.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Interiorismo/14.JPG" alt="Rafael Corro López">
+    </li>
+    <li>
+      <img src="Nosotros/Interiorismo/15.JPG" alt="Rafael Corro López">
+    </li>            
+  </ul>
 
+  <div class="controls">
+    <button id="prev">⟨</button>
+    <button id="next">⟩</button>
+  </div>
 
-    
-
-    <div class="controls">
-        <button id="prev">⟨</button>
-        <button id="next">⟩</button>
-    </div>
-
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
-    
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
 </div>
+
 
 
 

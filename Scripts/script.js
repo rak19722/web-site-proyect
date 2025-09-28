@@ -16,40 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// Esconder y mostrar la barra de navegación al hacer scroll
-let prevScrollPos = window.pageYOffset;
-
-window.onscroll = function() {
-    const currentScrollPos = window.pageYOffset;
-
-    if (prevScrollPos > currentScrollPos) {
-        document.getElementById("nav-bar-hide").style.top = "0";
-    } else {
-        document.getElementById("nav-bar-hide").style.top = "-100%";
-    }
-
-    prevScrollPos = currentScrollPos;
-};
-
-// Smooth scrolling para anclajes internos
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-// Función para alternar el menú de navegación en dispositivos móviles
-function toggleMenu() {
-    const menu = document.querySelector('.menu-toggle');
-    const hamburger = document.querySelector('.hamburger');
-    menu.classList.toggle('active');
-    hamburger.classList.toggle('active');
-}
-
 
 // Funciones para desplazamiento suave a secciones específicas
 function scrollToSectionInicio() {
@@ -348,21 +314,7 @@ function scrollToSectionCasa() {
 
 
 
-//Cuadros preinfo casas
 
-function mostrarCasa(casa) {
-    // Oculta todos los detalles primero
-    document.querySelectorAll('.casa-detalles').forEach(function (detalle) {
-        detalle.style.display = 'none';
-    });
-    // Muestra el detalle de la casa seleccionada
-    const casaSeleccionada = document.getElementById(`casa-${casa}`);
-    if (casaSeleccionada) {
-        casaSeleccionada.style.display = 'block';
-        // Opcional: Hacer scroll automático al detalle
-        casaSeleccionada.scrollIntoView({ behavior: 'smooth' });
-    }
-}
 
 
 
@@ -372,18 +324,6 @@ function changeImage(carouselId, direction) {
 
     // Listas de imágenes por carrusel
     const imageSets = {
-        "carousel-moratilla": [
-            "Moratilla/0.JPG",
-            "Moratilla/2.JPG",
-            "Moratilla/3.JPG",
-            "Moratilla/4.JPG",
-            "Moratilla/5.JPG",
-            "Moratilla/6.JPG",
-            "Moratilla/7.JPG",
-            "Moratilla/8.JPG",
-            "Moratilla/9.JPG",
-            "Moratilla/10.JPG"
-        ],
         "carousel-luna": [
             "Venta/1.jpg", 
             "Venta/2.jpg",

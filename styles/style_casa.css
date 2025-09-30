@@ -97,14 +97,7 @@
 
   
 
-  .hero-price{
-    right: 10px;
-    bottom: 10px;
-    padding: 8px 12px;
-    border-radius: 10px;
-    font-size: 14px;           /* más discreto en móvil */
-    line-height: 1;
-  }
+
 }
 
 /* Ultra-móvil (muy angosto): el precio sale del overlay y va debajo del hero */
@@ -114,7 +107,7 @@
     bottom: 66px;              /* un poco más de aire */
   }
   .hero-price{
-    position: static;          /* 👉 sale del overlay */
+    position: left;          /* 👉 sale del overlay */
     display: inline-block;
     margin: 8px 10px 0 10px;   /* aparece bajo la imagen */
     background: #111;          /* contraste sólido */

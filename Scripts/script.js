@@ -313,48 +313,10 @@ function scrollToSectionCasa() {
 }
 
 
+// Carrusel de la luna
+const myCarouselElement = document.querySelector('#carouselExampleCaptions');
 
-
-
-
-
-function changeImage(carouselId, direction) {
-    const carousel = document.getElementById(carouselId);
-    const mainImg = carousel.querySelector('.main-img');
-
-    // Listas de imágenes por carrusel
-    const imageSets = {
-        "carousel-luna": [
-            "Venta/1.jpg", 
-            "Venta/2.jpg",
-            "Venta/3.jpg", 
-            "Venta/4.jpg", 
-            "Venta/5.jpg",
-            "Venta/6.jpg", 
-            "Venta/7.jpg",
-            "Venta/8.jpg",
-            "Venta/9.jpg",
-            "Venta/10.jpg",
-            "Venta/11.jpg",
-            "Venta/12.jpg",
-            "Venta/13.jpg",
-            "Venta/14.jpg",
-            "Venta/15.jpg"
-        ]
-    };
-
-    // Selecciona la lista de imágenes correspondiente al carrusel
-    const images = imageSets[carouselId];
-
-    // Encuentra el índice actual
-    let currentIndex = images.findIndex(src => mainImg.src.includes(src));
-
-    // Cambiar índice según la dirección (positivo = abajo, negativo = arriba)
-    currentIndex = (currentIndex + direction + images.length) % images.length;
-
-    // Actualizar la imagen principal
-    mainImg.src = images[currentIndex];
-}
-
-
-
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,  // cambia cada 2 segundos
+  touch: false     // desactiva swipe en móviles
+});

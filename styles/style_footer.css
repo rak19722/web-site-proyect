@@ -7,16 +7,19 @@ footer {
     padding: 1rem;
 }
 
-
-
 .contact {
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
-.contact h1{/*titulo de barra de contacto*/
+.contact .wrap{
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+.contact h1 {
     font-size: 40px;
-    margin: 2rem;
-    margin-left: 0;
+    margin: 2rem 0;
+    text-align: center;
+    color: var(--white);
 }
 
 .contact .contact-container {
@@ -28,7 +31,7 @@ footer {
 
 .contact .contact-container .contact-column {
     flex: 1 1 48%;
-    text-align: left; /* Alineacion de texto en columnas left o center */
+    text-align: center;
 }
 
 .contact .contact-container .contact-column a {
@@ -36,17 +39,37 @@ footer {
     padding: 1rem 0;
     font-size: 20px;
     font-weight: bold;
-    color: var(--black); /*Color de texto para elementos de contacto*/
+    color: var(--white);
     text-decoration: none;
 }
 
-.contact .contact-container .contact-column a:hover { /* funcion hover es para aplicar efectos cuano el mouse esta encima*/
-    letter-spacing: 0.5px;
+.contact .contact-container .contact-column a i {
+    color: var(--white);
+    margin-right: 0.5rem;
+}
+
+.contact .contact-container .contact-column a:hover,
+.contact .contact-container .contact-column a:hover i {
     color: var(--main-color);
     transition: 0.3s;
 }
 
-.contact .contact-container .contact-column a i {
+/* Redes sociales en una sola fila */
+.social-row {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-row a {
+    font-size: 28px; /* tamaño de iconos */
+    color: var(--white);
+    text-decoration: none;
+}
+
+.social-row a:hover {
     color: var(--main-color);
-    margin-right: 0.5rem;
+    transform: scale(1.1);
+    transition: 0.3s;
 }

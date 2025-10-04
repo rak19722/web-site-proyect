@@ -1,0 +1,75 @@
+/* Footer Contacto */
+footer {
+    margin-top: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+.contact {
+    padding: 2rem 0;
+}
+
+.contact .wrap{
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+.contact h1 {
+    font-size: 40px;
+    margin: 2rem 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.contact .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.contact .contact-container .contact-column {
+    flex: 1 1 48%;
+    text-align: center;
+}
+
+.contact .contact-container .contact-column a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.contact .contact-container .contact-column a i {
+    color: var(--white);
+    margin-right: 0.5rem;
+}
+
+.contact .contact-container .contact-column a:hover,
+.contact .contact-container .contact-column a:hover i {
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+/* Redes sociales en una sola fila */
+.social-row {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-row a {
+    font-size: 28px; /* tamaño de iconos */
+    color: var(--white);
+    text-decoration: none;
+}
+
+.social-row a:hover {
+    color: var(--main-color);
+    transform: scale(1.1);
+    transition: 0.3s;
+}

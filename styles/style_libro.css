@@ -1,0 +1,88 @@
+/* Contenido */
+
+
+/*Estilo de pagina libro.html*/
+
+.book-section {
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 2rem;
+    gap: 2rem; /* Espacio entre elementos */
+}
+
+.book-details {
+    flex: 1;
+    max-width: 500px; /* Ajuste del ancho máximo del texto */
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.book-section h2 {
+    font-size: 30px; /* Tamaño reducido para un diseño más elegante */
+    color: var(--black);
+    font-weight: bold;
+    text-transform: uppercase; /* Letras en mayúscula */
+    margin-bottom: 1rem;
+    text-align: center; /* Centrar el título */
+}
+
+.book-section p {
+    font-size: 18px; /* Tamaño más pequeño para un diseño limpio */
+    color: var(--light-color);
+    line-height: 1.6; /* Mejorar la legibilidad */
+    text-align: justify; /* Alinear el texto */
+}
+
+.book-author {
+    color: var(--main-color); /* Destacar el autor con el color principal */
+    font-size: 20px;
+    margin-top: 0;
+    text-align: center; /* Centrar el nombre del autor */
+}
+
+.book-description {
+    color: #555; /* Un color más oscuro para destacar */
+    margin-top: 1rem;
+    font-style: italic; /* Cursiva para darle un toque elegante */
+}
+
+.book-cover {
+    flex: 1;
+    max-width: 400px; /* Reducir el tamaño máximo de la imagen */
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.book-cover img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transition: transform 0.3s ease-in-out; /* Efecto de hover */
+}
+
+.book-cover img:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el cursor */
+}
+
+.book-section button {
+    margin-top: 1rem;
+    background-color: var(--main-color); /* tamano y color de boton comprar libro */
+    color: var(--black);
+    padding: 10px 100px;
+    font-size: 25px;
+    font-weight: 200;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-section button:hover {
+    color: var(--white);
+    background-color: var(--black);
+    transition: 0.3s;
+}
+

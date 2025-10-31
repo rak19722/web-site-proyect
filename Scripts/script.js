@@ -92,6 +92,7 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
   touch: false     // desactiva swipe en móviles
 });
 
-//carrusel de inicio
+
+
 
 

@@ -14,9 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-
 // Funciones para desplazamiento suave a secciones específicas
 function scrollToSectionInicio() {
     var section = document.getElementById('inicio');
@@ -27,47 +24,6 @@ function scrollToSectionContacto() {
     var section = document.getElementById('contact');
     section.scrollIntoView({ behavior: 'smooth' });
 }
-
-function scrollToSectionTrayectoria() {
-    var section = document.getElementById('trayectoria');
-    section.scrollIntoView({ behavior: 'smooth' });
-}
-
-function scrollToSectionProyectos() {
-    var section = document.getElementById('proyectos');
-    section.scrollIntoView({ behavior: 'smooth' });
-}
-
-// Funciones específicas para "trayectoria"
-function scrollToSectionResidencia(){
-    var section = document.getElementById('residencia');
-    section.scrollIntoView({ behavior: 'smooth'});
-}
-
-function scrollToSectionConjunto(){
-    var section = document.getElementById('conjunto');
-    section.scrollIntoView({ behavior: 'smooth'});
-}
-
-function scrollToSectionComercial(){
-    var section = document.getElementById('comercial');
-    section.scrollIntoView({ behavior: 'smooth'});
-}
-
-function scrollToSectionInter(){
-    var section = document.getElementById('inter');
-    section.scrollIntoView({ behavior: 'smooth'});
-}
-
-function scrollToSectionProy(){
-    var section = document.getElementById('proy');
-    section.scrollIntoView({ behavior: 'smooth'});
-}
-
-
-
-
-
 
 
 // botton para llevarte a nosotros desde inicio hasta nosotros
@@ -91,6 +47,74 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
   interval: 2000,  // cambia cada 2 segundos
   touch: false     // desactiva swipe en móviles
 });
+
+
+// ocultar carrusles inicio y solo mostrar cuando se pique el boton mostrar experiencia: 
+
+console.log("JS cargado correctamente ✅");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".btn-more");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const targetId = button.getAttribute("data-target");
+      console.log("➡️ Click detectado en:", targetId);
+
+      // ✅ NO tocamos intro-images
+      // ✅ NO ocultamos ninguna sección
+
+      // Oculta solo otros carruseles (para evitar que se solapen)
+      document.querySelectorAll(".carrusel").forEach(c => {
+        c.classList.remove("active");
+        c.classList.add("hidden");
+      });
+
+      // Muestra el carrusel correspondiente
+      const targetCarousel = document.getElementById(targetId);
+      if (targetCarousel) {
+        targetCarousel.classList.remove("hidden");
+        targetCarousel.classList.add("active");
+        targetCarousel.scrollIntoView({ behavior: "smooth" });
+      } else {
+        console.warn("⚠️ No se encontró el carrusel con id:", targetId);
+      }
+    });
+  });
+});
+
+
+
+//arranca carrusels
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".btn-more");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const targetId = button.getAttribute("data-target");
+        console.log("Click detectado en:", targetId);
+
+        // Ocultar tarjetas
+        const introSection = document.querySelector(".intro-images");
+       
+
+        // Ocultar todos los carruseles
+        document.querySelectorAll(".carrusel").forEach(c => c.classList.add("hidden"));
+
+        // Mostrar el carrusel correspondiente
+        const targetCarousel = document.getElementById(targetId);
+        if (targetCarousel) {
+          targetCarousel.classList.remove("hidden");
+          targetCarousel.scrollIntoView({ behavior: "smooth" });
+        } else {
+          console.warn("No se encontró el carrusel con id:", targetId);
+        }
+      });
+    });
+  });
+
+
 
 
 

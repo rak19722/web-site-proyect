@@ -5,44 +5,35 @@
 
 /* CONTROLES (prev/next) */
 #CarruselInicio .carousel-control-prev,
-#CarruselInicio .carousel-control-next,
-#CarruselResidencial .carousel-control-prev,
-#CarruselResidencial .carousel-control-next {
+#CarruselInicio .carousel-control-next {
   width: 15%;
   opacity: .5;
   transition: opacity .15s ease;
 }
 
 #CarruselInicio .carousel-control-prev:hover,
-#CarruselInicio .carousel-control-next:hover,
-#CarruselResidencial .carousel-control-prev:hover,
-#CarruselResidencial .carousel-control-next:hover {
+#CarruselInicio .carousel-control-next:hover {
   opacity: .9;
 }
 
 /* ICONOS DE FLECHA (SVG blanco 2rem) */
 #CarruselInicio .carousel-control-prev-icon,
-#CarruselInicio .carousel-control-next-icon,
-#CarruselResidencial .carousel-control-prev-icon,
-#CarruselResidencial .carousel-control-next-icon {
+#CarruselInicio .carousel-control-next-icon {
   width: 2rem;
   height: 2rem;
   background-size: 100% 100%;
 }
 
-#CarruselInicio .carousel-control-prev-icon,
-#CarruselResidencial .carousel-control-prev-icon {
+#CarruselInicio .carousel-control-prev-icon{
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/%3E%3C/svg%3E");
 }
 
-#CarruselInicio .carousel-control-next-icon,
-#CarruselResidencial .carousel-control-next-icon {
+#CarruselInicio .carousel-control-next-icon{
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E");
 }
 
 /* INDICADORES (rayitas) */
-#CarruselInicio .carousel-indicators [data-bs-target],
-#CarruselResidencial .carousel-indicators [data-bs-target] {
+#CarruselInicio .carousel-indicators [data-bs-target] {
   width: 30px;
   height: 3px;
   margin: 3px;
@@ -53,10 +44,58 @@
   border-radius: 2px;
 }
 
-#CarruselInicio .carousel-indicators .active,
-#CarruselResidencial .carousel-indicators .active {
+#CarruselInicio .carousel-indicators .active {
   opacity: 1;
   background-color: #fff;
+}
+
+
+/*Ocultar carrusels*/
+#carrusels {
+  margin-top: 3rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.carrusel {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carrusel.active {
+  display: block;
+  opacity: 1;
+}
+
+.carrusel h2 {
+  font-size: 1.8rem;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.carrusel p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.hidden {
+  display: none;
+}
+
+.carrusel {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.carrusel.active {
+  display: block;
+  opacity: 1;
 }
 
 
@@ -111,7 +150,7 @@ h1::after {
 /* Introducción de la empresa */
 .intro-section {
     padding: 3rem 1rem;
-    background-color: var(--light-bg);
+    background-color: var(#e6e4e1);
     text-align: center;
     margin: 3rem 0;
     border-radius: 10px;
@@ -178,7 +217,7 @@ h1::after {
 
 /* ===== TARJETA ===== */
 .image-card {
-  background: #fff;
+  background: #ffffff;
   border: 3px solid var(--black);
   border-radius: 0px;
   padding: 12px;
@@ -204,6 +243,13 @@ h1::after {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.image-card.bienes-raices img {
+  max-width: 100%;
+  height: 150%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 /* ===== DESCRIPCIÓN ===== */
@@ -251,10 +297,6 @@ h1::after {
 
 
 
-
-
-
-
 /* Laptops medianas */
 @media (max-width: 1024px) {
   .image-card {
@@ -296,85 +338,80 @@ h1::after {
 
 
 }
+/* === Teléfonos pequeños y promedio (hasta ~480px) === */
+@media (max-width: 480px) {
+  .intro-images {
+    gap: 0.7rem;
+    justify-content: center;
+    padding: 0.5rem;
+  }
 
-/* Pantallas muy pequeñas (menos de 400px) */
-@media (max-width: 400px) {
   .image-card {
-    flex: 0 1 100%;
-    max-width: 100%; /* ahora sí 1 por fila */
+    flex: 0 1 42%;          /* un poco más angosta */
+    max-width: 42%;         /* encoge el ancho de la tarjeta */
+    padding: 6px;           /* menos relleno interior */
+    border-width: 2px;      /* bordes más delgados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: 145px;          /* altura reducida para evitar alargamiento */
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .image-info {
+    padding: 0.6rem 0.5rem 0.8rem;
+  }
+
+  .image-info p {
+    font-size: 0.8rem;      /* texto un poco más pequeño */
+    margin-bottom: 0.5rem;
+  }
+
+  .btn-more {
+    font-size: 13px;
+    padding: 6px 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   }
 }
 
 
 
+
+
+
+
 /* proyectos experiencia */
 
+#proyectos {
+  background-color: #303030;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+#proyectos .intro-images {
+  background-color: #303030;  /* fondo distinto solo para esta sección */
+}
+
+#proyectos .image-card{
+  background-color: #e6e4e1;
+  
+  border-radius: 0px;
+border: 5px solid #5e5e5e;   
+}
 
 .tituloProyectos{
-
     text-align: center;
+    color: white;
+    
 }
 
-.cube-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+#proyectos p{
+  color: rgb(0, 0, 0);
 }
 
-.cube {
-    width: 200px;
-    padding: 20px;
-    background-color: var(--white);
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
-.cube img {
-    max-width: 100%;
-    height: auto;
-    width: 60%; /* Tamano que ocupan las imagenes del cubo disponible en espacio para estandarizar sin importar el tamano de la imagen*/
-    max-height: 150px;
-    object-fit: cover; /* para que la referencia sea el cubo asignado */
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-/* Hover elegante y transparente */
-.cube:hover {
-    transform: translateY(-5px); /* pequeño levantamiento visual */
-    background-color: rgba(255, 255, 255, 0.6); /* transparencia elegante */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* sombra suave */
-    backdrop-filter: blur(4px); /* efecto de vidrio translúcido */
-}
-
-
-/* Opcional: efecto sobre la imagen al pasar el mouse */
-.cube:hover img {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-.cubes-container h2 {
-    /* Titulo de contenedor de cubos*/
-    margin: 20px;
-    text-align: center;
-    justify-content: center;
-    font-size: 30px;
-    color: var(--black);
-}
-
-.cubes-container h3 {
-    /*Titulo de cada cubo*/
-    color: var(--black);
-}
-
-.cubes-container p {
-    /*parrafo de cada cubo*/
-    color: var(--light-color);
-}
 
 
 
@@ -418,6 +455,7 @@ h1::after {
     color: var(--light-color);
 }
 
+
 @media (min-width: 700px) {
     .nosotros-title-column h1 {
         font-size: 30px; /* Tamaño más reducido específicamente para pantallas grandes */
@@ -436,6 +474,7 @@ h1::after {
     .nosotros-title-column {
         flex: 1 1 48%;
     }
+
 }
 
 /* Ajustes para dispositivos móviles */

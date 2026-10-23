@@ -16,7 +16,7 @@
 /* ===================== */
 /*        RESET          */
 /* ===================== */
-* { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: border-box; }
 body, h1, h2, p, ul, li { margin: 0; padding: 0; }
 
 body {
@@ -34,6 +34,7 @@ body {
   z-index: 50;
   transition: top .5s ease;
   background: var(--black);
+  padding: 15px;
 }
 #nav-bar-hide a { text-decoration: none; }
 
@@ -62,7 +63,7 @@ body {
 }
 
 #logo-nav-bar {
-  height: 72px;                  /* grande en desktop */
+  height: 100px;                  /* grande en desktop */
   width: auto;
   display: block;
 }
@@ -143,10 +144,36 @@ body {
 /*      RESPONSIVE       */
 /* ===================== */
 @media (max-width: 768px) {
-  #logo-nav-bar { height: 40px; }
+  #logo-nav-bar { height: 70px; }
   .logo-text { font-size: 18px; }
 
   .burger { display: block; }
+
+  /* Contenedor superior del logo + texto + burger */
+  .topbar {
+    display: flex;
+    justify-content: space-between;   /* LOGO IZQ — BURGER DER */
+    align-items: center;
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  /* Alinear el texto del logo a la izquierda */
+  .logo-text {
+    text-align: left;
+  }
+
+  /* Evitar que el logo y el texto se centren */
+  #logo-nav-bar {
+    margin-right: 25px;
+  }
+
+  /* Separar un poco el logo del texto */
+  .logo-wrapper {
+    display: flex;
+    align-items: left;
+    gap: 10px;
+  }
 
   .items {
     flex-direction: column;
@@ -157,12 +184,16 @@ body {
     transition: max-height .5s ease-in-out;
     background: var(--black);
     border-top: 1px solid rgba(255,255,255,.1);
+    align-items: flex-start;   /* <<--- CLAVE */
+    text-align: left;          /* <<--- CLAVE */
   }
+
   .item {
     width: 100%;
     padding: 15px 16px;
     border-radius: 0;
     border-top: 1px solid rgba(255,255,255,.1);
+    text-align: left;         /* <<--- CLAVE */
   }
 
   .menu-checkbox:checked ~ #primary-menu .items { max-height: 600px; }
